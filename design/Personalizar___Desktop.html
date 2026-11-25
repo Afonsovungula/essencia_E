@@ -1,0 +1,550 @@
+<!DOCTYPE html><html lang="pt"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personalizar Peça — Essência Eterna</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config" data-stitch-original-src="30317a14f1054b9f===../../tailwind.config.js">/** @type {import('tailwindcss').Config} */
+globalThis.tailwind = globalThis.tailwind || {};
+globalThis.tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        'primary': '#1C1815',
+        'on-primary': '#FAF6EF',
+        'secondary': '#F1E9DC',
+        'on-secondary': '#2B2622',
+        'surface': '#FAF6EF',
+        'on-surface': '#2B2622',
+        'surface-container': '#FFFFFF',
+        'on-surface-variant': '#6F665C',
+        'surface-container-low': '#F1E9DC',
+        'surface-container-high': '#E6E2DB',
+        'outline': '#93908B',
+        'outline-variant': '#E6E2DB',
+        'gold': '#B8893B',
+        'gold-light': '#E7C873',
+        'gold-rich': '#C9972E',
+        'gold-tint': '#FFF3D1',
+        'on-gold-tint': '#3D2800',
+        'silver': '#8A929A',
+        'silver-light': '#E8ECEF',
+        'silver-tint': '#EEF1F4',
+        'on-silver-tint': '#1C1F22',
+        'footer': '#151210',
+        'on-footer': '#FAF6EF',
+        'success': '#2D6A4F',
+        'on-success': '#FFFFFF',
+        'success-container': '#E8F5E9',
+        'on-success-container': '#1B4332',
+        'warning': '#8C5A00',
+        'on-warning': '#FFFFFF',
+        'warning-container': '#FFEEDA',
+        'on-warning-container': '#432C00',
+        'error': '#BA1A1A',
+        'on-error': '#FFFFFF',
+        'error-container': '#FFDAD6',
+        'on-error-container': '#410002',
+        'stone-pink': '#E87A90',
+        'stone-blue': '#4B83C3',
+        'stone-white': '#F5F3EE',
+        'stone-red': '#C83E3E',
+        'stone-green': '#3B8A5A',
+        'stone-purple': '#7E57A6',
+      },
+      borderRadius: {
+        'sm': '8px',
+        'DEFAULT': '12px',
+        'md': '12px',
+        'lg': '20px',
+        'xl': '28px',
+        'full': '9999px',
+      },
+      spacing: {
+        'gutter-xs': '4px',
+        'gutter-sm': '8px',
+        'gutter-md': '16px',
+        'gutter-lg': '24px',
+        'gutter-xl': '32px',
+        'section-mobile': '48px',
+        'section-desktop': '80px',
+        'page-margin': '24px',
+      },
+      fontFamily: {
+        'display': ['"Fraunces"', 'sans-serif'],
+        'headline': ['"Fraunces"', 'sans-serif'],
+        'title': ['"DM Sans"', 'sans-serif'],
+        'body': ['"DM Sans"', 'sans-serif'],
+        'label': ['"DM Sans"', 'sans-serif'],
+        'script': ['"Great Vibes"', 'sans-serif'],
+      },
+      fontSize: {
+        'display-lg': ['48px', { lineHeight: '56px', letterSpacing: '-0.5px', fontWeight: '600' }],
+        'display-lg-mobile': ['32px', { lineHeight: '38px', letterSpacing: '-0.25px', fontWeight: '600' }],
+        'headline-lg': ['36px', { lineHeight: '44px', letterSpacing: '-0.25px', fontWeight: '600' }],
+        'headline-lg-mobile': ['26px', { lineHeight: '32px', letterSpacing: '-0.2px', fontWeight: '600' }],
+        'headline-md': ['24px', { lineHeight: '30px', letterSpacing: '0px', fontWeight: '600' }],
+        'title-lg': ['20px', { lineHeight: '28px', letterSpacing: '0px', fontWeight: '600' }],
+        'title-md': ['16px', { lineHeight: '24px', letterSpacing: '0px', fontWeight: '600' }],
+        'body-lg': ['18px', { lineHeight: '28px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-md': ['16px', { lineHeight: '24px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-sm': ['14px', { lineHeight: '20px', letterSpacing: '0px', fontWeight: '400' }],
+        'label-lg': ['15px', { lineHeight: '20px', letterSpacing: '0.1px', fontWeight: '600' }],
+        'label-md': ['13px', { lineHeight: '18px', letterSpacing: '0.2px', fontWeight: '500' }],
+        'label-sm': ['12px', { lineHeight: '16px', letterSpacing: '0.3px', fontWeight: '500' }],
+        'script-lg': ['40px', { lineHeight: '48px', letterSpacing: '0px', fontWeight: '400' }],
+        'script-lg-mobile': ['32px', { lineHeight: '40px', letterSpacing: '0px', fontWeight: '400' }],
+        'script-md': ['28px', { lineHeight: '36px', letterSpacing: '0px', fontWeight: '400' }],
+      },
+      transitionDuration: {
+        'state-change': '150ms',
+        'surface-enter': '300ms',
+        'aurora-drift': '12000ms',
+      },
+      transitionDelay: {
+        'state-change': '0ms',
+        'surface-enter': '0ms',
+        'aurora-drift': '0ms',
+      },
+      transitionTimingFunction: {
+        'state-change': 'ease-out',
+        'surface-enter': 'cubic-bezier(0.2, 0, 0, 1)',
+        'aurora-drift': 'ease-in-out',
+      },
+    },
+  },
+};
+if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
+</script>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,600&amp;family=DM+Sans:wght@400;500;600;700&amp;family=Dancing+Script:wght@600&amp;family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&amp;family=Great+Vibes&amp;family=Pacifico&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet">
+  <style>
+    .material-symbols-outlined, .material-symbols-rounded, .material-symbols-sharp, .material-icons {
+      display: inline-block; width: 1em; height: 1em; line-height: 1 !important;
+      box-sizing: content-box; overflow: hidden; white-space: nowrap; direction: ltr; vertical-align: middle;
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface font-body min-h-screen flex flex-col">
+
+  <!-- Shared Header -->
+  <header class="sticky top-0 z-30 bg-surface/95 border-b border-outline-variant">
+    <div class="max-w-[1200px] mx-auto px-gutter-lg py-gutter-md flex items-center justify-between gap-gutter-md">
+      <a href="#inicio" class="flex items-center gap-3 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold rounded-md">
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-md bg-footer border border-gold/60 shrink-0" aria-hidden="true">
+          <svg viewBox="0 0 32 32" class="w-6 h-6" fill="none">
+            <path d="M16 4L28 16L16 28L4 16L16 4Z" stroke="#E7C873" stroke-width="1.6"></path>
+            <circle cx="16" cy="18" r="2.2" fill="#E7C873"></circle>
+            <path d="M8 16H13L16 19L19 16H24" stroke="#B8893B" stroke-width="1.3" stroke-linecap="round"></path>
+          </svg>
+        </span>
+        <span class="flex flex-col">
+          <span data-design-text-token="title-md" class="font-headline text-title-md text-on-surface leading-tight">Essência Eterna</span>
+          <span data-design-text-token="label-sm" class="font-label text-label-sm text-on-surface-variant">Jóias Personalizadas</span>
+        </span>
+      </a>
+
+      <nav aria-label="Navegação principal" class="hidden lg:flex items-center gap-gutter-xl">
+        <a href="../inicio/InicioDesktop.html" data-design-text-token="label-lg" class="font-label text-label-lg text-on-surface-variant hover:text-on-surface transition-colors duration-state-change">Início</a>
+        <a href="../pecas/PecasDesktop.html" data-design-text-token="label-lg" class="font-label text-label-lg text-on-surface border-b-2 border-gold pb-0.5">Peças</a>
+        <a href="../inicio/InicioDesktop.html#como-funciona" data-design-text-token="label-lg" class="font-label text-label-lg text-on-surface-variant hover:text-on-surface transition-colors duration-state-change">Como funciona</a>
+        <a href="../acompanhar/AcompanharDesktop.html" data-design-text-token="label-lg" class="font-label text-label-lg text-on-surface-variant hover:text-on-surface transition-colors duration-state-change">Acompanhar pedido</a>
+      </nav>
+
+      <div class="flex items-center gap-gutter-sm">
+        <a href="https://wa.me/244946599662" data-component-id="button-header-whatsapp" data-component-type="button" data-component-variant="with-icon" class="inline-flex items-center justify-center gap-gutter-sm px-gutter-md py-2.5 rounded-full bg-primary text-on-primary border border-gold/50 hover:bg-on-surface transition-colors duration-state-change shadow-sm">
+          <span class="material-symbols-outlined text-gold-light text-body-md" aria-hidden="true">chat</span>
+          <span data-design-text-token="label-md" class="font-label text-label-md">WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-1 max-w-[1200px] w-full mx-auto px-gutter-lg py-gutter-xl">
+    <!-- Page Header -->
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-gutter-md mb-gutter-xl">
+      <div class="flex flex-col gap-gutter-xs">
+        <span data-design-text-token="label-sm" class="font-label text-label-sm text-on-surface-variant">Personalização guiada · Esboço em tempo real</span>
+        <h1 data-design-text-token="headline-lg" class="font-headline text-headline-lg text-on-surface">Cria a tua peça</h1>
+      </div>
+      <div class="flex items-center gap-gutter-sm">
+        <span data-design-text-token="label-sm" class="font-label text-label-sm text-on-surface-variant">Progresso</span>
+        <div class="w-36 h-2 rounded-full bg-silver-light overflow-hidden">
+          <div class="w-4/5 h-full bg-gold rounded-full"></div>
+        </div>
+        <span data-design-text-token="label-sm" class="font-label text-label-sm text-on-surface tabular-nums">5 de 6</span>
+      </div>
+    </div>
+
+    <!-- Two-Column Builder -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-xl items-start">
+
+      <!-- Left Sticky Preview ("Esboço digital") -->
+      <aside class="lg:col-span-5 lg:sticky lg:top-24 flex flex-col gap-gutter-md">
+        <article data-component-id="card-elevated" data-component-type="card" data-component-variant="elevated" class="bg-surface-container rounded-lg border border-outline-variant p-gutter-lg shadow-sm flex flex-col gap-gutter-lg">
+          <header class="flex items-center justify-between gap-gutter-sm">
+            <div>
+              <h2 data-design-text-token="title-lg" class="font-title text-title-lg text-on-surface">Esboço digital</h2>
+              <p data-design-text-token="body-sm" class="font-body text-body-sm text-on-surface-variant">Pré-visualização em tempo real</p>
+            </div>
+            <span id="preview-badge" class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-gold-tint text-on-gold-tint border border-gold/40 shrink-0">
+              <span data-design-text-token="label-sm" class="font-label text-label-sm">Aço inox dourado</span>
+            </span>
+          </header>
+
+          <!-- Live Jewelry Canvas -->
+          <div id="sketch-canvas" class="relative rounded-md bg-surface-container-low border border-outline-variant p-gutter-xl flex flex-col items-center justify-center min-h-[260px]">
+            <svg viewBox="0 0 360 150" class="w-full max-w-[340px] h-auto" aria-label="Pré-visualização da peça personalizada">
+              <defs>
+                <linearGradient id="metal-gold" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#E7C873"></stop>
+                  <stop offset="50%" stop-color="#B8893B"></stop>
+                  <stop offset="100%" stop-color="#DFB963"></stop>
+                </linearGradient>
+                <linearGradient id="metal-silver" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#ECEFF2"></stop>
+                  <stop offset="50%" stop-color="#B9C0C7"></stop>
+                  <stop offset="100%" stop-color="#DFE3E7"></stop>
+                </linearGradient>
+              </defs>
+              <path id="chain-left" d="M18 75 C42 75, 58 75, 78 75" stroke="url(#metal-gold)" stroke-width="3.5" stroke-dasharray="6 4" stroke-linecap="round"></path>
+              <path id="chain-right" d="M282 75 C302 75, 318 75, 342 75" stroke="url(#metal-gold)" stroke-width="3.5" stroke-dasharray="6 4" stroke-linecap="round"></path>
+              <rect id="plate-body" x="78" y="48" width="204" height="54" rx="14" fill="url(#metal-gold)" stroke="#8C5A00" stroke-opacity="0.35" stroke-width="1.2"></rect>
+              <rect x="85" y="54" width="190" height="42" rx="10" fill="none" stroke="#FFFFFF" stroke-opacity="0.45" stroke-width="1"></rect>
+              <g id="charm-group">
+                <circle cx="294" cy="96" r="11" fill="#E87A90" stroke="#8C5A00" stroke-width="1.5"></circle>
+                <circle cx="291" cy="93" r="3" fill="#FFFFFF" fill-opacity="0.65"></circle>
+              </g>
+              <text id="preview-name-svg" x="180" y="83" text-anchor="middle" fill="#2B2622" style="font-family: &#39;Great Vibes&#39;, cursive; font-size: 30px;">Rael Manuel</text>
+            </svg>
+
+            <div class="mt-gutter-md flex items-center justify-between gap-gutter-sm w-full text-body-sm text-on-surface-variant">
+              <span id="preview-spec" data-design-text-token="body-sm">Mascote de bebé · Criança · Rosa</span>
+              <span id="preview-price" data-design-text-token="title-md" class="font-title text-title-md text-on-surface tabular-nums shrink-0">8.000 Kz</span>
+            </div>
+          </div>
+
+          <!-- Approval & Suggestion -->
+          <div class="flex flex-col gap-gutter-sm">
+            <button id="approve-sketch-btn" data-component-id="button-with-icon" data-component-type="button" data-component-variant="with-icon" type="button" onclick="toggleApprove()" class="inline-flex items-center justify-center gap-gutter-sm w-full px-gutter-lg py-3.5 rounded-full bg-primary text-on-primary border border-gold/50 hover:bg-on-surface transition-colors duration-state-change shadow-sm">
+              <span class="material-symbols-outlined text-gold-light text-title-md" aria-hidden="true">verified</span>
+              <span id="approve-sketch-label" data-design-text-token="label-lg" class="font-label text-label-lg">Aprovo este esboço</span>
+            </button>
+
+            <div class="flex items-center justify-between pt-1">
+              <button type="button" onclick="applySuggestion()" class="text-body-sm text-on-surface-variant underline decoration-gold underline-offset-4 hover:text-on-surface">
+                <span data-design-text-token="body-sm">Quero uma sugestão</span>
+              </button>
+              <span data-design-text-token="label-sm" class="font-label text-label-sm text-on-surface-variant tabular-nums">1.ª prestação: <strong id="deposit-amount" class="text-on-surface">4.000 Kz</strong></span>
+            </div>
+          </div>
+        </article>
+      </aside>
+
+      <!-- Right Guided Conversational Form -->
+      <section class="lg:col-span-7 flex flex-col gap-gutter-lg">
+
+        <!-- Step 1: Que peça queres criar? -->
+        <div class="bg-surface-container rounded-lg border border-outline-variant p-gutter-lg flex flex-col gap-gutter-md">
+          <h2 data-design-text-token="title-lg" class="font-title text-title-lg text-on-surface">1. Que peça queres criar?</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter-sm">
+            <button type="button" onclick="selectPiece(&#39;colar&#39;)" id="piece-colar" class="text-left p-gutter-md rounded-md border border-outline-variant bg-surface hover:border-gold transition-colors duration-state-change flex flex-col gap-1">
+              <span data-design-text-token="title-md" class="font-title text-title-md text-on-surface">Colar com nome</span>
+              <span data-design-text-token="body-sm" class="font-body text-body-sm text-on-surface-variant tabular-nums">7.000 Kz</span>
+            </button>
+            <button type="button" onclick="selectPiece(&#39;mascote&#39;)" id="piece-mascote" class="text-left p-gutter-md rounded-md border-2 border-primary bg-gold-tint/35 transition-colors duration-state-change flex flex-col gap-1">
+              <span data-design-text-token="title-md" class="font-title text-title-md text-on-surface">Mascote de bebé</span>
+              <span data-design-text-token="body-sm" class="font-body text-body-sm text-on-surface-variant tabular-nums">8.000 Kz</span>
+            </button>
+            <button type="button" onclick="selectPiece(&#39;pulseira&#39;)" id="piece-pulseira" class="text-left p-gutter-md rounded-md border border-outline-variant bg-surface hover:border-gold transition-colors duration-state-change flex flex-col gap-1">
+              <span data-design-text-token="title-md" class="font-title text-title-md text-on-surface">Pulseira</span>
+              <span data-design-text-token="body-sm" class="font-body text-body-sm text-on-surface-variant">Preço sob consulta</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Step 2: Para quem é? -->
+        <div class="bg-surface-container rounded-lg border border-outline-variant p-gutter-lg flex flex-col gap-gutter-md">
+          <h2 data-design-text-token="title-lg" class="font-title text-title-lg text-on-surface">2. Para quem é?</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter-md">
+            <div class="flex flex-col gap-gutter-xs">
+              <span data-design-text-token="label-md" class="font-label text-label-md text-on-surface-variant">Género</span>
+              <div class="flex flex-wrap gap-gutter-xs">
+                <button type="button" onclick="selectChip(&#39;gender&#39;,&#39;Feminino&#39;)" id="gender-Feminino" class="px-gutter-md py-2 rounded-full border border-outline-variant bg-surface text-label-md font-label text-on-surface">Feminino</button>
+                <button type="button" onclick="selectChip(&#39;gender&#39;,&#39;Masculino&#39;)" id="gender-Masculino" class="px-gutter-md py-2 rounded-full border border-gold bg-primary text-on-primary text-label-md font-label">Masculino</button>
+              </div>
+            </div>
+            <div class="flex flex-col gap-gutter-xs">
+              <span data-design-text-token="label-md" class="font-label text-label-md text-on-surface-variant">Tamanho</span>
+              <div class="flex flex-wrap gap-gutter-xs">
+                <button type="button" onclick="selectSize(&#39;Criança&#39;)" id="size-Criança" class="px-gutter-md py-2 rounded-full border border-gold bg-primary text-on-primary text-label-md font-label">Criança</button>
+                <button type="button" onclick="selectSize(&#39;Adulto&#39;)" id="size-Adulto" class="px-gutter-md py-2 rounded-full border border-outline-variant bg-surface text-label-md font-label text-on-surface">Adulto</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 3: Que acabamento preferes? -->
+        <div class="bg-surface-container rounded-lg border border-outline-variant p-gutter-lg flex flex-col gap-gutter-md">
+          <h2 data-design-text-token="title-lg" class="font-title text-title-lg text-on-surface">3. Que acabamento preferes?</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter-sm">
+            <button type="button" onclick="selectFinish(&#39;Prateado&#39;)" id="finish-Prateado" class="flex items-center gap-3 p-gutter-md rounded-md border border-outline-variant bg-surface hover:border-gold transition-colors duration-state-change">
+              <span class="w-8 h-8 rounded-full border border-outline-variant bg-gradient-to-br from-surface-container to-outline shrink-0"></span>
+              <span data-design-text-token="title-md" class="font-title text-title-md text-on-surface">Aço inox prateado</span>
+            </button>
+            <button type="button" onclick="selectFinish(&#39;Dourado&#39;)" id="finish-Dourado" class="flex items-center gap-3 p-gutter-md rounded-md border-2 border-primary bg-gold-tint/35 transition-colors duration-state-change">
+              <span class="w-8 h-8 rounded-full border border-gold bg-gradient-to-br from-gold-light to-gold shrink-0"></span>
+              <span data-design-text-token="title-md" class="font-title text-title-md text-on-surface">Aço inox dourado</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Step 4: Nome + 6 Estilos de Letra -->
+        <div class="bg-surface-container rounded-lg border border-outline-variant p-gutter-lg flex flex-col gap-gutter-md">
+          <h2 data-design-text-token="title-lg" class="font-title text-title-lg text-on-surface">4. Que nome ou frase vamos gravar?</h2>
+          <label data-component-id="input-field-text" data-component-type="input-field" data-component-variant="text" class="flex flex-col gap-gutter-xs">
+            <div class="flex items-center justify-between">
+              <span data-design-text-token="label-md" class="font-label text-label-md text-on-surface">Escreve o nome tal como o queres gravar</span>
+              <span id="char-count" data-design-text-token="label-sm" class="font-label text-label-sm text-on-surface-variant tabular-nums">11 / 24</span>
+            </div>
+            <input id="engraving-input" type="text" maxlength="24" value="Rael Manuel" oninput="updateName(this.value)" placeholder="Ex.: Rael Manuel" class="w-full rounded-md bg-surface border border-outline-variant px-gutter-md py-3 text-body-md text-on-surface placeholder:text-outline focus:border-gold focus:ring-2 focus:ring-gold/30 focus:outline-none">
+            <span data-design-text-token="body-sm" class="font-body text-body-sm text-on-surface-variant">Confere os acentos, gravamos exatamente como escreveres (1 ou 2 nomes).</span>
+          </label>
+
+          <div class="flex flex-col gap-gutter-sm pt-gutter-xs">
+            <span data-design-text-token="label-md" class="font-label text-label-md text-on-surface">Escolhe o estilo de letra</span>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-gutter-sm">
+              <button type="button" onclick="selectFont(&#39;B01&#39;, &#34;&#39;Great Vibes&#39;, cursive&#34;)" id="font-B01" class="p-gutter-md rounded-md border-2 border-gold bg-gold-tint/30 text-center flex flex-col items-center gap-1">
+                <span class="font-preview text-title-lg text-on-surface" style="font-family: &#39;Great Vibes&#39;, cursive; font-size: 26px;">Rael Manuel</span>
+                <span data-design-text-token="label-sm" class="font-label text-label-sm text-on-surface-variant">B01 Clássico</span>
+              </button>
+              <button type="button" onclick="selectFont(&#39;B02&#39;, &#34;&#39;Dancing Script&#39;, cursive&#34;)" id="font-B02" class="p-gutter-md rounded-md border border-outline-variant bg-surface hover:border-gold text-center flex flex-col items-center gap-1">
+                <span class="font-preview text-title-lg text-on-surface" style="font-family: &#39;Dancing Script&#39;, cursive; font-size: 22px;">Rael Manuel</span>
+                <span data-design-text-token="label-sm" class="font-label text-label-sm text-on-surface-variant">B02 Suave</span>
+              </button>
+              <button type="button" onclick="selectFont(&#39;B03&#39;, &#34;&#39;Pacifico&#39;, cursive&#34;)" id="font-B03" class="p-gutter-md rounded-md border border-outline-variant bg-surface hover:border-gold text-center flex flex-col items-center gap-1">
+                <span class="font-preview text-title-lg text-on-surface" style="font-family: &#39;Pacifico&#39;, cursive; font-size: 19px;">Rael Manuel</span>
+                <span data-design-text-token="label-sm" class="font-label text-label-sm text-on-surface-variant">B03 Redondo</span>
+              </button>
+              <button type="button" onclick="selectFont(&#39;B08&#39;, &#34;&#39;Cormorant Garamond&#39;, serif&#34;)" id="font-B08" class="p-gutter-md rounded-md border border-outline-variant bg-surface hover:border-gold text-center flex flex-col items-center gap-1">
+                <span class="font-preview text-title-lg text-on-surface italic" style="font-family: &#39;Cormorant Garamond&#39;, serif; font-size: 22px;">Rael Manuel</span>
+                <span data-design-text-token="label-sm" class="font-label text-label-sm text-on-surface-variant">B08 Itálico</span>
+              </button>
+              <button type="button" onclick="selectFont(&#39;B15&#39;, &#34;&#39;Fraunces&#39;, serif&#34;)" id="font-B15" class="p-gutter-md rounded-md border border-outline-variant bg-surface hover:border-gold text-center flex flex-col items-center gap-1">
+                <span class="font-preview text-title-lg text-on-surface" style="font-family: &#39;Fraunces&#39;, serif; font-size: 20px;">Rael Manuel</span>
+                <span data-design-text-token="label-sm" class="font-label text-label-sm text-on-surface-variant">B15 Editorial</span>
+              </button>
+              <button type="button" onclick="selectFont(&#39;B20&#39;, &#34;&#39;DM Sans&#39;, sans-serif&#34;)" id="font-B20" class="p-gutter-md rounded-md border border-outline-variant bg-surface hover:border-gold text-center flex flex-col items-center gap-1">
+                <span class="font-preview text-title-lg text-on-surface font-semibold" style="font-family: &#39;DM Sans&#39;, sans-serif; font-size: 18px;">Rael Manuel</span>
+                <span data-design-text-token="label-sm" class="font-label text-label-sm text-on-surface-variant">B20 Imprensa</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 5: Cor da pedra (only for mascotes & kids) -->
+        <div id="stone-step" class="bg-surface-container rounded-lg border border-outline-variant p-gutter-lg flex flex-col gap-gutter-md">
+          <div class="flex items-center justify-between">
+            <h2 data-design-text-token="title-lg" class="font-title text-title-lg text-on-surface">5. Que cor queres para a pedra?</h2>
+            <span data-design-text-token="label-sm" class="font-label text-label-sm text-on-surface-variant">Para mascotes e peças de criança</span>
+          </div>
+          <div class="flex flex-wrap gap-gutter-sm">
+            <button type="button" onclick="selectStone(&#39;Rosa&#39;, &#39;#E87A90&#39;)" class="stone-btn inline-flex items-center gap-2 px-gutter-md py-2 rounded-full border-2 border-primary bg-gold-tint/35 text-label-md font-label text-on-surface">
+              <span class="w-3.5 h-3.5 rounded-full bg-stone-pink"></span>Rosa
+            </button>
+            <button type="button" onclick="selectStone(&#39;Azul&#39;, &#39;#4B83C3&#39;)" class="stone-btn inline-flex items-center gap-2 px-gutter-md py-2 rounded-full border border-outline-variant bg-surface text-label-md font-label text-on-surface">
+              <span class="w-3.5 h-3.5 rounded-full bg-stone-blue"></span>Azul
+            </button>
+            <button type="button" onclick="selectStone(&#39;Branco&#39;, &#39;#F5F3EE&#39;)" class="stone-btn inline-flex items-center gap-2 px-gutter-md py-2 rounded-full border border-outline-variant bg-surface text-label-md font-label text-on-surface">
+              <span class="w-3.5 h-3.5 rounded-full bg-stone-white border border-outline"></span>Branco
+            </button>
+            <button type="button" onclick="selectStone(&#39;Vermelho&#39;, &#39;#C83E3E&#39;)" class="stone-btn inline-flex items-center gap-2 px-gutter-md py-2 rounded-full border border-outline-variant bg-surface text-label-md font-label text-on-surface">
+              <span class="w-3.5 h-3.5 rounded-full bg-stone-red"></span>Vermelho
+            </button>
+            <button type="button" onclick="selectStone(&#39;Verde&#39;, &#39;#3B8A5A&#39;)" class="stone-btn inline-flex items-center gap-2 px-gutter-md py-2 rounded-full border border-outline-variant bg-surface text-label-md font-label text-on-surface">
+              <span class="w-3.5 h-3.5 rounded-full bg-stone-green"></span>Verde
+            </button>
+            <button type="button" onclick="selectStone(&#39;Roxo&#39;, &#39;#7E57A6&#39;)" class="stone-btn inline-flex items-center gap-2 px-gutter-md py-2 rounded-full border border-outline-variant bg-surface text-label-md font-label text-on-surface">
+              <span class="w-3.5 h-3.5 rounded-full bg-stone-purple"></span>Roxo
+            </button>
+          </div>
+        </div>
+
+        <!-- Step 6: Quantidade e Continuar -->
+        <div class="bg-surface-container rounded-lg border border-outline-variant p-gutter-lg flex flex-col sm:flex-row sm:items-center justify-between gap-gutter-md">
+          <div class="flex items-center gap-gutter-md">
+            <span data-design-text-token="title-md" class="font-title text-title-md text-on-surface">Quantidade</span>
+            <div class="inline-flex items-center rounded-full border border-outline-variant bg-surface p-1 gap-3">
+              <button type="button" onclick="changeQty(-1)" aria-label="Diminuir quantidade" class="w-8 h-8 rounded-full hover:bg-surface-container-low flex items-center justify-center text-on-surface">−</button>
+              <span id="qty-value" data-design-text-token="title-md" class="font-title text-title-md tabular-nums min-w-[20px] text-center">1</span>
+              <button type="button" onclick="changeQty(1)" aria-label="Aumentar quantidade" class="w-8 h-8 rounded-full hover:bg-surface-container-low flex items-center justify-center text-on-surface">+</button>
+            </div>
+          </div>
+
+          <button type="button" onclick="saveAndContinue()" data-component-id="button-primary" data-component-type="button" data-component-variant="primary" class="inline-flex items-center justify-center gap-gutter-sm px-gutter-xl py-3.5 rounded-full bg-primary text-on-primary border border-gold/50 hover:bg-on-surface transition-colors duration-state-change shadow-sm">
+            <span data-design-text-token="label-lg" class="font-label text-label-lg">Continuar para o resumo</span>
+            <span class="material-symbols-outlined text-gold-light text-body-md" aria-hidden="true">arrow_forward</span>
+          </button>
+        </div>
+
+      </section>
+    </div>
+  </main>
+
+  <!-- Dark Footer (#151210) -->
+  <footer class="bg-footer text-on-footer py-gutter-xl border-t border-gold/30 mt-section-mobile">
+    <div class="max-w-[1200px] mx-auto px-gutter-lg grid grid-cols-1 md:grid-cols-3 gap-gutter-xl items-start">
+      <div class="flex flex-col gap-gutter-md">
+        <img src="https://lh3.googleusercontent.com/aida/ALJJyrAjvo7lyQIEfl5SetGNeF7knNiydud8r8jIm5gnjpBazSxThY-k3cCpK49subaLqH7vwLQXE-znNVkcPSPkfcWuvrxyZG6rEq78lBXvvLH0iUnBeJNlqLmlrFEvTrcR5cxEjt4W14J6YSZAqp7iHPa-09CqyV3YDPcprCWFZnWvsM_GbjvmZGioWQzOY1OgxromTGo9azmvnA0k9hxUVBTpr2TFsyrjNHc881p50WOrh1I9_wmzbP8jaaI" alt="Logótipo Essência Eterna – Jóias Personalizadas" class="w-24 h-24 object-contain rounded-md" data-stitch-original-src="25761f344f936c2e===../../uploads/whatsapp-image-2026-11-23-at-21-53-37-ff35ae.jpg">
+        <p data-design-text-token="body-sm" class="font-body text-body-sm text-on-footer/80 max-w-xs">Minimalismo, durabilidade e alma. Jóias personalizadas que não se apagam.</p>
+      </div>
+      <div class="flex flex-col gap-gutter-sm">
+        <h3 data-design-text-token="title-md" class="font-title text-title-md text-gold-light">Navegação</h3>
+        <a href="#inicio" data-design-text-token="body-sm" class="font-body text-body-sm text-on-footer/80 hover:text-on-footer">Início</a>
+        <a href="#pecas" data-design-text-token="body-sm" class="font-body text-body-sm text-on-footer/80 hover:text-on-footer">Peças</a>
+        <a href="#como-funciona" data-design-text-token="body-sm" class="font-body text-body-sm text-on-footer/80 hover:text-on-footer">Como funciona</a>
+        <a href="#acompanhar" data-design-text-token="body-sm" class="font-body text-body-sm text-on-footer/80 hover:text-on-footer">Acompanhar pedido</a>
+      </div>
+      <div class="flex flex-col gap-gutter-sm">
+        <h3 data-design-text-token="title-md" class="font-title text-title-md text-gold-light">Contactos</h3>
+        <p data-design-text-token="body-sm" class="font-body text-body-sm text-on-footer/80 tabular-nums">WhatsApp: +244 946 599 662</p>
+        <p data-design-text-token="body-sm" class="font-body text-body-sm text-on-footer/80">Email: [EMAIL A CONFIRMAR]</p>
+        <p data-design-text-token="body-sm" class="font-body text-body-sm text-on-footer/80">Tala Hadi, Luanda — Angola</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const state = {
+      piece: 'mascote',
+      size: 'Criança',
+      finish: 'Dourado',
+      name: 'Rael Manuel',
+      stone: 'Rosa',
+      qty: 1,
+      approved: false
+    };
+
+    function updateSummary() {
+      const unitPrice = state.piece === 'colar' ? 7000 : state.piece === 'mascote' ? 8000 : null;
+      const totalEl = document.getElementById('preview-price');
+      const depEl = document.getElementById('deposit-amount');
+      if (unitPrice) {
+        const total = unitPrice * state.qty;
+        totalEl.textContent = total.toLocaleString('pt-PT') + ' Kz';
+        depEl.textContent = (total / 2).toLocaleString('pt-PT') + ' Kz';
+      } else {
+        totalEl.textContent = 'Preço sob consulta';
+        depEl.textContent = 'A confirmar';
+      }
+      const pieceLabel = state.piece === 'colar' ? 'Colar com nome' : state.piece === 'mascote' ? 'Mascote de bebé' : 'Pulseira';
+      const showStone = state.piece === 'mascote' || state.size === 'Criança';
+      document.getElementById('stone-step').classList.toggle('hidden', !showStone);
+      document.getElementById('charm-group').style.display = showStone ? 'block' : 'none';
+      document.getElementById('preview-spec').textContent = showStone
+        ? `${pieceLabel} · ${state.size} · ${state.stone}`
+        : `${pieceLabel} · ${state.size}`;
+    }
+
+    function selectPiece(p) {
+      state.piece = p;
+      ['colar', 'mascote', 'pulseira'].forEach(k => {
+        const el = document.getElementById('piece-' + k);
+        el.className = k === p
+          ? 'text-left p-gutter-md rounded-md border-2 border-gold bg-gold-tint/40 transition-colors duration-state-change flex flex-col gap-1'
+          : 'text-left p-gutter-md rounded-md border border-outline-variant bg-surface hover:border-gold transition-colors duration-state-change flex flex-col gap-1';
+      });
+      updateSummary();
+    }
+
+    function selectSize(s) {
+      state.size = s;
+      ['Criança', 'Adulto'].forEach(k => {
+        const el = document.getElementById('size-' + k);
+        el.className = k === s
+          ? 'px-gutter-md py-2 rounded-full border border-gold bg-primary text-on-primary text-label-md font-label'
+          : 'px-gutter-md py-2 rounded-full border border-outline-variant bg-surface text-label-md font-label text-on-surface';
+      });
+      updateSummary();
+    }
+
+    function selectFinish(f) {
+      state.finish = f;
+      const url = f === 'Dourado' ? 'url(#metal-gold)' : 'url(#metal-silver)';
+      document.getElementById('plate-body').setAttribute('fill', url);
+      document.getElementById('chain-left').setAttribute('stroke', url);
+      document.getElementById('chain-right').setAttribute('stroke', url);
+      document.getElementById('preview-badge').querySelector('span').textContent = f === 'Dourado' ? 'Aço inox dourado' : 'Prateado';
+      ['Prateado', 'Dourado'].forEach(k => {
+        const el = document.getElementById('finish-' + k);
+        el.className = k === f
+          ? 'flex items-center gap-3 p-gutter-md rounded-md border-2 border-gold bg-gold-tint/40 transition-colors duration-state-change'
+          : 'flex items-center gap-3 p-gutter-md rounded-md border border-outline-variant bg-surface hover:border-gold transition-colors duration-state-change';
+      });
+    }
+
+    function updateName(val) {
+      state.name = val || 'O teu nome';
+      document.getElementById('char-count').textContent = `${val.length} / 24`;
+      document.getElementById('preview-name-svg').textContent = state.name;
+      document.querySelectorAll('.font-preview').forEach(el => { el.textContent = state.name; });
+    }
+
+    function selectFont(id, family) {
+      document.getElementById('preview-name-svg').style.fontFamily = family;
+      ['B01', 'B02', 'B03', 'B08', 'B15', 'B20'].forEach(k => {
+        const el = document.getElementById('font-' + k);
+        el.className = k === id
+          ? 'p-gutter-md rounded-md border-2 border-gold bg-gold-tint/30 text-center flex flex-col items-center gap-1'
+          : 'p-gutter-md rounded-md border border-outline-variant bg-surface hover:border-gold text-center flex flex-col items-center gap-1';
+      });
+    }
+
+    function selectStone(name, hex) {
+      state.stone = name;
+      document.querySelector('#charm-group circle').setAttribute('fill', hex);
+      updateSummary();
+    }
+
+    function changeQty(delta) {
+      state.qty = Math.max(1, state.qty + delta);
+      document.getElementById('qty-value').textContent = state.qty;
+      updateSummary();
+    }
+
+    function toggleApprove() {
+      state.approved = !state.approved;
+      document.getElementById('approve-sketch-label').textContent = state.approved
+        ? 'Esboço aprovado ✓'
+        : 'Aprovo este esboço';
+    }
+
+    function applySuggestion() {
+      const input = document.getElementById('engraving-input');
+      input.value = 'Ana & Pedro';
+      updateName('Ana & Pedro');
+    }
+
+    function saveAndContinue() {
+      try {
+        const existing = JSON.parse(localStorage.getItem('ee_order') || '{}');
+        const next = Object.assign({}, existing, state, {
+          fontFamily: document.getElementById('preview-name-svg').style.fontFamily || "'Great Vibes', cursive"
+        });
+        localStorage.setItem('ee_order', JSON.stringify(next));
+      } catch (e) {}
+      window.location.href = '../resumo/ResumoDesktop.html';
+    }
+
+    try {
+      const saved = JSON.parse(localStorage.getItem('ee_order') || 'null');
+      if (saved) {
+        if (saved.piece) selectPiece(saved.piece);
+        if (saved.finish) selectFinish(saved.finish);
+        if (saved.size) selectSize(saved.size);
+      }
+    } catch (e) {}
+  </script>
+
+
+</body></html>

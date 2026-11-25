@@ -1,0 +1,243 @@
+<!DOCTYPE html><html lang="pt"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personalizar — Essência Eterna (Mobile)</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config" data-stitch-original-src="30317a14f1054b9f===../../tailwind.config.js">/** @type {import('tailwindcss').Config} */
+globalThis.tailwind = globalThis.tailwind || {};
+globalThis.tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        'primary': '#1C1815',
+        'on-primary': '#FAF6EF',
+        'secondary': '#F1E9DC',
+        'on-secondary': '#2B2622',
+        'surface': '#FAF6EF',
+        'on-surface': '#2B2622',
+        'surface-container': '#FFFFFF',
+        'on-surface-variant': '#6F665C',
+        'surface-container-low': '#F1E9DC',
+        'surface-container-high': '#E6E2DB',
+        'outline': '#93908B',
+        'outline-variant': '#E6E2DB',
+        'gold': '#B8893B',
+        'gold-light': '#E7C873',
+        'gold-rich': '#C9972E',
+        'gold-tint': '#FFF3D1',
+        'on-gold-tint': '#3D2800',
+        'silver': '#8A929A',
+        'silver-light': '#E8ECEF',
+        'silver-tint': '#EEF1F4',
+        'on-silver-tint': '#1C1F22',
+        'footer': '#151210',
+        'on-footer': '#FAF6EF',
+        'success': '#2D6A4F',
+        'on-success': '#FFFFFF',
+        'success-container': '#E8F5E9',
+        'on-success-container': '#1B4332',
+        'warning': '#8C5A00',
+        'on-warning': '#FFFFFF',
+        'warning-container': '#FFEEDA',
+        'on-warning-container': '#432C00',
+        'error': '#BA1A1A',
+        'on-error': '#FFFFFF',
+        'error-container': '#FFDAD6',
+        'on-error-container': '#410002',
+        'stone-pink': '#E87A90',
+        'stone-blue': '#4B83C3',
+        'stone-white': '#F5F3EE',
+        'stone-red': '#C83E3E',
+        'stone-green': '#3B8A5A',
+        'stone-purple': '#7E57A6',
+      },
+      borderRadius: {
+        'sm': '8px',
+        'DEFAULT': '12px',
+        'md': '12px',
+        'lg': '20px',
+        'xl': '28px',
+        'full': '9999px',
+      },
+      spacing: {
+        'gutter-xs': '4px',
+        'gutter-sm': '8px',
+        'gutter-md': '16px',
+        'gutter-lg': '24px',
+        'gutter-xl': '32px',
+        'section-mobile': '48px',
+        'section-desktop': '80px',
+        'page-margin': '24px',
+      },
+      fontFamily: {
+        'display': ['"Fraunces"', 'sans-serif'],
+        'headline': ['"Fraunces"', 'sans-serif'],
+        'title': ['"DM Sans"', 'sans-serif'],
+        'body': ['"DM Sans"', 'sans-serif'],
+        'label': ['"DM Sans"', 'sans-serif'],
+        'script': ['"Great Vibes"', 'sans-serif'],
+      },
+      fontSize: {
+        'display-lg': ['48px', { lineHeight: '56px', letterSpacing: '-0.5px', fontWeight: '600' }],
+        'display-lg-mobile': ['32px', { lineHeight: '38px', letterSpacing: '-0.25px', fontWeight: '600' }],
+        'headline-lg': ['36px', { lineHeight: '44px', letterSpacing: '-0.25px', fontWeight: '600' }],
+        'headline-lg-mobile': ['26px', { lineHeight: '32px', letterSpacing: '-0.2px', fontWeight: '600' }],
+        'headline-md': ['24px', { lineHeight: '30px', letterSpacing: '0px', fontWeight: '600' }],
+        'title-lg': ['20px', { lineHeight: '28px', letterSpacing: '0px', fontWeight: '600' }],
+        'title-md': ['16px', { lineHeight: '24px', letterSpacing: '0px', fontWeight: '600' }],
+        'body-lg': ['18px', { lineHeight: '28px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-md': ['16px', { lineHeight: '24px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-sm': ['14px', { lineHeight: '20px', letterSpacing: '0px', fontWeight: '400' }],
+        'label-lg': ['15px', { lineHeight: '20px', letterSpacing: '0.1px', fontWeight: '600' }],
+        'label-md': ['13px', { lineHeight: '18px', letterSpacing: '0.2px', fontWeight: '500' }],
+        'label-sm': ['12px', { lineHeight: '16px', letterSpacing: '0.3px', fontWeight: '500' }],
+        'script-lg': ['40px', { lineHeight: '48px', letterSpacing: '0px', fontWeight: '400' }],
+        'script-lg-mobile': ['32px', { lineHeight: '40px', letterSpacing: '0px', fontWeight: '400' }],
+        'script-md': ['28px', { lineHeight: '36px', letterSpacing: '0px', fontWeight: '400' }],
+      },
+      transitionDuration: {
+        'state-change': '150ms',
+        'surface-enter': '300ms',
+        'aurora-drift': '12000ms',
+      },
+      transitionDelay: {
+        'state-change': '0ms',
+        'surface-enter': '0ms',
+        'aurora-drift': '0ms',
+      },
+      transitionTimingFunction: {
+        'state-change': 'ease-out',
+        'surface-enter': 'cubic-bezier(0.2, 0, 0, 1)',
+        'aurora-drift': 'ease-in-out',
+      },
+    },
+  },
+};
+if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
+</script>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,600&amp;family=DM+Sans:wght@400;500;600;700&amp;family=Dancing+Script:wght@600&amp;family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&amp;family=Great+Vibes&amp;family=Pacifico&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet">
+  <style>
+    .material-symbols-outlined, .material-symbols-rounded, .material-symbols-sharp, .material-icons {
+      display: inline-block; width: 1em; height: 1em; line-height: 1 !important;
+      box-sizing: content-box; overflow: hidden; white-space: nowrap; direction: ltr; vertical-align: middle;
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface font-body min-h-screen flex flex-col pb-24">
+
+  <!-- Mobile Header -->
+  <header class="sticky top-0 z-30 bg-surface/95 border-b border-outline-variant">
+    <div class="px-gutter-md py-3 flex items-center justify-between gap-gutter-sm">
+      <a href="#inicio" class="flex items-center gap-2">
+        <span class="material-symbols-outlined text-on-surface text-title-lg" aria-hidden="true">arrow_back</span>
+        <span data-design-text-token="title-md" class="font-headline text-title-md text-on-surface">Personalizar peça</span>
+      </a>
+      <span data-design-text-token="label-sm" class="font-label text-label-sm text-on-surface-variant tabular-nums">5 / 6</span>
+    </div>
+  </header>
+
+  <main class="flex-1 px-gutter-md py-gutter-lg flex flex-col gap-gutter-lg">
+
+    <!-- Preview on Top -->
+    <article class="bg-surface-container rounded-lg border border-outline-variant p-gutter-md shadow-sm flex flex-col gap-gutter-md">
+      <div class="flex items-center justify-between">
+        <span data-design-text-token="title-md" class="font-title text-title-md text-on-surface">Esboço digital</span>
+        <span class="px-2.5 py-1 rounded-full bg-gold-tint text-on-gold-tint border border-gold/40">
+          <span data-design-text-token="label-sm" class="font-label text-label-sm">Aço inox dourado</span>
+        </span>
+      </div>
+
+      <div class="rounded-md bg-surface-container-low border border-outline-variant p-gutter-md flex flex-col items-center">
+        <svg viewBox="0 0 360 130" class="w-full h-auto" aria-label="Pré-visualização da mascote personalizada">
+          <defs>
+            <linearGradient id="m-gold" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#E7C873"></stop>
+              <stop offset="50%" stop-color="#B8893B"></stop>
+              <stop offset="100%" stop-color="#DFB963"></stop>
+            </linearGradient>
+          </defs>
+          <path d="M16 65 H78" stroke="url(#m-gold)" stroke-width="3.5" stroke-dasharray="6 4" stroke-linecap="round"></path>
+          <path d="M282 65 H344" stroke="url(#m-gold)" stroke-width="3.5" stroke-dasharray="6 4" stroke-linecap="round"></path>
+          <rect x="78" y="38" width="204" height="54" rx="14" fill="url(#m-gold)"></rect>
+          <circle cx="294" cy="86" r="10" fill="#E87A90" stroke="#8C5A00" stroke-width="1.5"></circle>
+          <text x="180" y="73" text-anchor="middle" fill="#2B2622" style="font-family: &#39;Great Vibes&#39;, cursive; font-size: 28px;">Rael Manuel</text>
+        </svg>
+      </div>
+
+      <button type="button" class="inline-flex items-center justify-center gap-2 w-full py-3 rounded-full bg-primary text-on-primary border border-gold/50">
+        <span class="material-symbols-outlined text-gold-light text-title-md" aria-hidden="true">verified</span>
+        <span data-design-text-token="label-lg" class="font-label text-label-lg">Aprovo este esboço</span>
+      </button>
+    </article>
+
+    <!-- Step 1: Peça -->
+    <section class="bg-surface-container rounded-lg border border-outline-variant p-gutter-md flex flex-col gap-gutter-sm">
+      <h2 data-design-text-token="title-md" class="font-title text-title-md text-on-surface">1. Que peça queres criar?</h2>
+      <div class="flex flex-col gap-gutter-xs">
+        <button type="button" class="flex items-center justify-between p-3 rounded-md border border-outline-variant bg-surface text-left">
+          <span data-design-text-token="label-lg" class="font-label text-label-lg text-on-surface">Colar com nome</span>
+          <span data-design-text-token="body-sm" class="font-body text-body-sm text-on-surface-variant tabular-nums">7.000 Kz</span>
+        </button>
+        <button type="button" class="flex items-center justify-between p-3 rounded-md border-2 border-primary bg-gold-tint/35 text-left">
+          <span data-design-text-token="label-lg" class="font-label text-label-lg text-on-surface">Mascote de bebé</span>
+          <span data-design-text-token="body-sm" class="font-body text-body-sm text-on-surface tabular-nums">8.000 Kz</span>
+        </button>
+        <button type="button" class="flex items-center justify-between p-3 rounded-md border border-outline-variant bg-surface text-left">
+          <span data-design-text-token="label-lg" class="font-label text-label-lg text-on-surface">Pulseira</span>
+          <span data-design-text-token="body-sm" class="font-body text-body-sm text-on-surface-variant">Sob consulta</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Step 2: Nome e Letra -->
+    <section class="bg-surface-container rounded-lg border border-outline-variant p-gutter-md flex flex-col gap-gutter-sm">
+      <h2 data-design-text-token="title-md" class="font-title text-title-md text-on-surface">2. Nome e estilo de letra</h2>
+      <input type="text" value="Rael Manuel" class="w-full rounded-md bg-surface border border-outline-variant px-3 py-2.5 text-body-md text-on-surface">
+      <span data-design-text-token="body-sm" class="font-body text-body-sm text-on-surface-variant">Confere os acentos, gravamos exatamente como escreveres.</span>
+      <div class="grid grid-cols-2 gap-gutter-xs pt-1">
+        <button type="button" class="p-3 rounded-md border-2 border-gold bg-gold-tint/30 text-center">
+          <span class="block text-on-surface" style="font-family: &#39;Great Vibes&#39;, cursive; font-size: 22px;">Rael Manuel</span>
+          <span data-design-text-token="label-sm" class="font-label text-label-sm text-on-surface-variant">B01 Clássico</span>
+        </button>
+        <button type="button" class="p-3 rounded-md border border-outline-variant bg-surface text-center">
+          <span class="block text-on-surface" style="font-family: &#39;Dancing Script&#39;, cursive; font-size: 20px;">Rael Manuel</span>
+          <span data-design-text-token="label-sm" class="font-label text-label-sm text-on-surface-variant">B02 Suave</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Step 3: Pedra -->
+    <section class="bg-surface-container rounded-lg border border-outline-variant p-gutter-md flex flex-col gap-gutter-sm">
+      <h2 data-design-text-token="title-md" class="font-title text-title-md text-on-surface">3. Cor da pedra</h2>
+      <div class="flex flex-wrap gap-gutter-xs">
+        <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border-2 border-primary bg-gold-tint/35 text-label-md font-label">
+          <span class="w-3 h-3 rounded-full bg-stone-pink"></span>Rosa
+        </span>
+        <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-outline-variant bg-surface text-label-md font-label">
+          <span class="w-3 h-3 rounded-full bg-stone-blue"></span>Azul
+        </span>
+        <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-outline-variant bg-surface text-label-md font-label">
+          <span class="w-3 h-3 rounded-full bg-stone-green"></span>Verde
+        </span>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Sticky Mobile Bottom Bar -->
+  <div class="fixed bottom-0 inset-x-0 z-30 bg-surface-container border-t border-outline-variant px-gutter-md py-3 flex items-center justify-between gap-gutter-md shadow-sm">
+    <div class="flex flex-col">
+      <span data-design-text-token="label-sm" class="font-label text-label-sm text-on-surface-variant">Total (50% agora)</span>
+      <span data-design-text-token="title-lg" class="font-title text-title-lg text-on-surface tabular-nums">8.000 Kz</span>
+    </div>
+    <a href="#resumo" class="inline-flex items-center justify-center gap-2 px-gutter-lg py-3 rounded-full bg-primary text-on-primary border border-gold/50">
+      <span data-design-text-token="label-lg" class="font-label text-label-lg">Continuar</span>
+      <span class="material-symbols-outlined text-gold-light text-body-md" aria-hidden="true">arrow_forward</span>
+    </a>
+  </div>
+
+
+
+</body></html>

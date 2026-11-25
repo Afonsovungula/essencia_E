@@ -1,0 +1,6 @@
+{
+  "name": "Essência Eterna",
+  "description": "Jóias personalizadas em aço inox gravadas à mão em Luanda — colares com nome e mascotes de bebé com esboço digital em tempo real.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

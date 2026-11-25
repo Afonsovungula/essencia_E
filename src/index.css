@@ -1,0 +1,164 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #1C1815;
+  --color-on-primary: #FAF6EF;
+  --color-secondary: #F1E9DC;
+  --color-on-secondary: #2B2622;
+  --color-surface: #FAF6EF;
+  --color-on-surface: #2B2622;
+  --color-surface-container: #FFFFFF;
+  --color-on-surface-variant: #6F665C;
+  --color-surface-container-low: #F1E9DC;
+  --color-surface-container-high: #E6E2DB;
+  --color-outline: #93908B;
+  --color-outline-variant: #E6E2DB;
+
+  --color-gold: #B8893B;
+  --color-gold-light: #E7C873;
+  --color-gold-rich: #C9972E;
+  --color-gold-tint: #FFF3D1;
+  --color-on-gold-tint: #3D2800;
+
+  --color-silver: #8A929A;
+  --color-silver-light: #E8ECEF;
+  --color-silver-tint: #EEF1F4;
+  --color-on-silver-tint: #1C1F22;
+
+  --color-footer: #151210;
+  --color-on-footer: #FAF6EF;
+
+  --color-success: #2D6A4F;
+  --color-on-success: #FFFFFF;
+  --color-success-container: #E8F5E9;
+  --color-on-success-container: #1B4332;
+
+  --color-warning: #8C5A00;
+  --color-on-warning: #FFFFFF;
+  --color-warning-container: #FFEEDA;
+  --color-on-warning-container: #432C00;
+
+  --color-error: #BA1A1A;
+  --color-on-error: #FFFFFF;
+  --color-error-container: #FFDAD6;
+  --color-on-error-container: #410002;
+
+  --color-stone-pink: #E87A90;
+  --color-stone-blue: #4B83C3;
+  --color-stone-white: #F5F3EE;
+  --color-stone-red: #C83E3E;
+  --color-stone-green: #3B8A5A;
+  --color-stone-purple: #7E57A6;
+
+  --font-display: "Fraunces", Georgia, serif;
+  --font-headline: "Fraunces", Georgia, serif;
+  --font-title: "DM Sans", system-ui, sans-serif;
+  --font-body: "DM Sans", system-ui, sans-serif;
+  --font-label: "DM Sans", system-ui, sans-serif;
+  --font-script: "Great Vibes", cursive;
+}
+
+@keyframes auroraDrift {
+  0%, 100% {
+    transform: translate3d(-6%, -4%, 0) scale(1);
+    opacity: 0.55;
+  }
+  50% {
+    transform: translate3d(6%, 5%, 0) scale(1.08);
+    opacity: 0.85;
+  }
+}
+
+@keyframes sparkleFloat {
+  0% {
+    transform: translateY(16px) scale(0.7);
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.9;
+  }
+  80% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(-48px) scale(1.1);
+    opacity: 0;
+  }
+}
+
+@keyframes writeScript {
+  0% {
+    clip-path: inset(0 100% 0 0);
+    opacity: 1;
+  }
+  55% {
+    clip-path: inset(0 0 0 0);
+    opacity: 1;
+  }
+  90% {
+    clip-path: inset(0 0 0 0);
+    opacity: 1;
+  }
+  100% {
+    clip-path: inset(0 100% 0 0);
+    opacity: 1;
+  }
+}
+
+@keyframes writeLine {
+  0% {
+    stroke-dashoffset: 260;
+    opacity: 0.3;
+  }
+  55% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+  85% {
+    stroke-dashoffset: 0;
+    opacity: 0.8;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 0;
+  }
+}
+
+.hero-aurora {
+  animation: auroraDrift 12s ease-in-out infinite;
+}
+
+.hero-sparkle-1 {
+  animation: sparkleFloat 4.8s ease-in-out infinite;
+}
+
+.hero-sparkle-2 {
+  animation: sparkleFloat 5.6s ease-in-out 1.4s infinite;
+}
+
+.hero-sparkle-3 {
+  animation: sparkleFloat 6.2s ease-in-out 2.6s infinite;
+}
+
+.hero-write-text {
+  animation: writeScript 7s ease-in-out infinite;
+}
+
+.hero-write-stroke {
+  stroke-dasharray: 260;
+  animation: writeLine 7s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-aurora,
+  .hero-sparkle-1,
+  .hero-sparkle-2,
+  .hero-sparkle-3,
+  .hero-write-text,
+  .hero-write-stroke {
+    animation: none !important;
+    clip-path: none !important;
+    stroke-dashoffset: 0 !important;
+    opacity: 1 !important;
+  }
+}
